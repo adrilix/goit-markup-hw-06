@@ -534,21 +534,15 @@ background: rgba(47, 48, 58, 0.8);
     align-items: center;
 }
 
-.clients-item{
-    border: 1px solid var(--social-icons);
-    border-radius: 4px;
-    width: 170px;
-    height: 92px;
-    /* outline: 5px solid red; */
-}
-
 .clients-link{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    width: 170px;
+    height: 92px;
     fill: var(--social-icons);
+    border: 1px solid var(--social-icons);
+    border-radius: 4px;
     transition: fill var(--anim),
     border var(--anim);
 }
