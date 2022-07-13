@@ -152,7 +152,7 @@
       </section>
 
       <!-- наша команда -->
-      <section class="team section"> 
+      <section class="team section">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-items list">
@@ -604,10 +604,61 @@
             <use href="./images/svg/icons.svg#close"></use>
           </svg>
         </button>
-        <form action="">
-          <label for=""></label>
-          <input type="text" name="" id="">
-        </form>
+
+        <div class="modal-contant">
+          <h2 class="modal-headline">
+            Оставьте свои данные, мы вам перезвоним
+          </h2>
+
+          <form class="modal-form">
+            <div class="inputs">
+              <label class="input-label" for="name">Имя</label>
+              <input class="input-window" type="text" name="name" id="name" />
+            </div>
+
+            <div class="inputs">
+              <label class="input-label" for="tel">Телефон</label>
+              <input class="input-window" type="tel" name="tel" id="tel" />
+            </div>
+
+            <div class="inputs">
+              <label class="input-label" for="email">Почта</label>
+              <input
+                class="input-window"
+                type="email"
+                name="email"
+                id="email"
+              />
+            </div>
+
+            <div class="inputs comments">
+              <label class="input-label " for="textarea-comment"
+                >Комментарий</label
+              >
+              <textarea
+                class="input-window textarea"
+                name="comment"
+                id="textarea-comment"
+                placeholder="Введите текст"
+              ></textarea>
+            </div>
+
+            <div class="chekbox">
+              <input class="input-checkbox"
+                type="checkbox"
+                name="acceptance"
+                value="accepted"
+                id="accepted"
+              />
+              <label class="label-checkbox" for="accepted"
+                >Соглашаюсь с рассылкой и принимаю
+                <span><a href="">Условия договора</a></span></label
+              >
+            </div>
+
+            <button class="button-modal" type="submit">Отправить</button>
+          </form>
+        </div>
       </div>
     </div>
 
