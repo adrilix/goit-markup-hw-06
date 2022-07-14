@@ -230,7 +230,7 @@ img{
 }
 
 .mail:hover,
-.mailfocus{
+.mail:focus{
     color: var(--brand-color);
 }
 
@@ -933,12 +933,17 @@ color: var(--text-third-tlbgc);
     transition: fill var(--anim);
 
 }
-.input-window:focus,
+.input-window:focus{
+    border-color: var(--brand-color);
+}
 .input-window:hover{
     border-color: var(--brand-color);
 }
 
-.input-window:focus,
+.input-window:focus + .svg-modal{
+    fill: var(--brand-color);
+}
+
 .input-window:hover + .svg-modal{
     fill: var(--brand-color);
 }
@@ -1040,9 +1045,6 @@ user-select: none;
     outline: var(--brand-color);
 }
 
-.input-checkbox:checked + .modal-form-checkbox > .modal-form-icon{
-    fill: var(--brand-color);
-}
 
 .checkbox-link{
     color: var(--brand-color);
